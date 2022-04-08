@@ -20,10 +20,12 @@ $(document).ready(function() {
     event.preventDefault();
     const size = $("#size").val() + " ";
     // const toppings= " " + $("#topping").val();
+    // const topping = $("input:radio:checked").val();
     let toppings = [];
-    $("topping").each(function(element) {
-      topping.push($('#topping').val());
+    $("input:radio[name=topping]:checked").each(function() {
+     toppings.push($(this).val());
     });
+    console.log(toppings)
     let myPizza = new Pizza(size, toppings)
     console.log(myPizza)
     const outputArray = Object.values(myPizza)
