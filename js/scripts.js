@@ -18,7 +18,7 @@ Pizza.prototype.addTopping = function(topping) {
 $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
-    const size = $("#size").val();
+    const size = $("#size").val()+ ' ';
     let toppings = [];
     $("input:checkbox[name=topping]:checked").each(function() {
      toppings.push($(this).val());

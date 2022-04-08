@@ -9,11 +9,27 @@
 }
 body {  
   margin-top: 5%;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
   /* background-image: url("https://pbs.twimg.com/media/EVLyO8VVAAIt1ru?format=jpg&name=large"); */
   background-color: #1fca97; 
   height: 900px; 
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
+}
+#pizza {
+  margin-top: -35%;
+  height: 1500px;
+  width: 1500px;
+  position:relative; 
+  top:-60px; 
+  z-index:1;">
+}
+#pep {
+  margin-top: -35%;
+  height: 1500px;
+  width: 1500px;
+  position:absolute; 
+  top:-60px; 
+  z-index:2;">
 }
