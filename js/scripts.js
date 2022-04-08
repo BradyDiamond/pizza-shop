@@ -18,9 +18,9 @@ Pizza.prototype.addTopping = function(topping) {
 $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
-    const size = $("#size").val();
+    const size = document.getElementById('size').value;
     let toppings = [];
-    $("#topping").each(function(element) {
+    $("topping").each(function(toppings) {
       toppings.push($('#topping').val());
     });
     let myPizza = new Pizza(size, toppings)
