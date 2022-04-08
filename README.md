@@ -31,3 +31,13 @@ _select your answers and press proceed to see your language__
 _licensed under the [MIT License] (LICENSE)_
 
 _Copyright (c) _2022_ _Brady Diamond_ 
+
+Describe: Pizza()
+
+Test: It will return a Pizza and size
+code: function Pizza(medium)
+Expected output: Pizza {size: medium}
+
+Test: It will return a Pizza with size and topping
+code: Pizza.prototype.addTopping("peperoni") 
+Expected output: Pizza {size: medium, peperoni}
