@@ -18,12 +18,16 @@ Pizza.prototype.addTopping = function(topping) {
 $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
-    const size = document.getElementById('size').value;
-    let toppings = [];
-    $("topping").each(function(toppings) {
-      toppings.push($('#topping').val());
-    });
+    const size = $("#size").val() + " ";
+    const toppings= " " + $("#topping").val();
+    // let toppings = [];
+    // $("toppings").each(function(toppings) {
+    //   toppings.push($('#topping').val());
+    // });
     let myPizza = new Pizza(size, toppings)
     console.log(myPizza)
+    const outputArray = Object.values(myPizza)
+    $('#output').text(outputArray)
+   
   });
 });
