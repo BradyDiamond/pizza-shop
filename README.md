@@ -1,19 +1,19 @@
- _SURVEY_
+ _Brady's Pizza_
 
 #### By _**Brady Diamond**_
 
-#### _A site to determine what code language you should learn_
+#### _A site to build a pizza_
 
 ## Technologies Used
 
 * _HTML_
 * _CSS_
 * _Javascript_
-* _here_
+
 
 ## Description
 
-_A website to find your programing language_
+_A website to build a pizza_
 
 ## Setup/Installation Requirements
 
@@ -21,11 +21,11 @@ _this webite is availible through my profile located at https://github.com/Brady
 
 _Using "git clone" add this repository to your desktop_
 _In the cloned folder open "index.html"_
-_select your answers and press proceed to see your language__
+_select your toppings and press "buy my pie" to see your total__
 
 ## Known Bugs
 
-* _currently no known bugs_
+* _currently not functional_
 
 ## License
 _licensed under the [MIT License] (LICENSE)_
@@ -41,3 +41,7 @@ Expected output: Pizza {size: medium}
 Test: It will return a Pizza with size and topping
 code: Pizza.prototype.addTopping("peperoni") 
 Expected output: Pizza {size: medium, peperoni}
+
+Test: It will return a Pizza with size and multiple toppings
+code: Pizza.prototype.addTopping("peperoni",  sausage) 
+Expected output: Pizza {size: medium, peperoni, sausage}
