@@ -10,32 +10,24 @@
 <body>
   <div class="container">
     <h1>Brady's Pizza</h1>
-    <form id="name">
-      <div class="form-group">
-        <label for="name1">Enter Your <em>First</em> Name</label>
-        <input id="name1" class="form-control" type="text">
-        <label for="name2">Enter Your <em>Last</em> Name</label>
-        <input id="name2" class="form-control" type="text">
-      </div>
-      <div class="radio">
-        <h2>Build your Pizza</h2>
-        <label>
-          <input type="radio" name="size" value="small" checked>
-        small
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="size" value="medium">
-         medium
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="size" value="Large">
-         large
-        </label>
-      </div>
+    <body> 
+      <div class="container">
+       
+       <h1 id="greeting"></h1>
+       <h1 id="closer"></h1>
+         
+         <form id="order">
+     
+           <div id="size">
+             <label for="city">select size</label>
+             <select class="form-control" id="size">
+               <option value="0"></option>
+               <option value="1">small</option>
+               <option value="2">medium</option>
+               <option value="3">large</option>
+             </select>
+           </div> 
+            
       <button type="submit" class="btn-dark">View Purchase</button>
       <div id="output">
   
