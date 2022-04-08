@@ -1,0 +1,19 @@
+.row{
+  float: left;
+}
+.btn-dark {
+  float: right;
+}
+.row{
+
+}
+body {  
+  margin-top: 5%;
+  margin-bottom: 15%;
+  /* background-image: url("https://pbs.twimg.com/media/EVLyO8VVAAIt1ru?format=jpg&name=large"); */
+  background-color: #1fca97; 
+  height: 900px; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}

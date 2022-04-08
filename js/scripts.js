@@ -18,11 +18,9 @@ Pizza.prototype.addTopping = function(topping) {
 $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
-    const size = $("#size").val() + " ";
-    // const toppings= " " + $("#topping").val();
-    // const topping = $("input:radio:checked").val();
+    const size = $("#size").val();
     let toppings = [];
-    $("input:radio[name=topping]:checked").each(function() {
+    $("input:checkbox[name=topping]:checked").each(function() {
      toppings.push($(this).val());
     });
     console.log(toppings)

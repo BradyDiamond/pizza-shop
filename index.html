@@ -9,59 +9,82 @@
 </head>
 <body>
   <div class="container">
-    <h1>Brady's Pizza</h1>
-    <body> 
-      <div class="container">
-       
-       <h1 id="greeting"></h1>
-       <h1 id="closer"></h1>
-         
-         <form id="order">
-     
-           <div id="size-select">
-             <label for="city">select size</label>
-             <select class="form-control" id="size">
-               <option>small</option>
-               <option>medium</option>
-               <option>large</option>
-             </select>
-           </div> 
-           <!-- <div id="topping-select">
-            <label for="topping">select toppings</label>
-            <select class="form-control" id="topping">
-              <option>none</option>
-              <option>peperoni</option>
-              <option>sausage</option>
-              <option>chicken</option>
-            </select>
-            <!-- <select class="form-control" id="topping2"> -->
-              <!-- <option>none</option>
-              <option>peperoni</option>
-              <option>sausage</option>
-              <option>chicken</option>
-            </select> -->
-            <h2>toppings</h2>
+    <h1 id="title">Brady's Pizza</h1>
+    <form id="order">
+      <div id="size-select">
+        <label for="city">select size</label>
+        <select id="size">
+          <option>small</option>
+          <option>medium</option>
+          <option>large</option>
+        </select>
+      </div>
+      <div id="toppings">
+      <h2>toppings</h2>
+      <div class="row">
+        <div class="col-4">
+          <div class="checkbox">
             <label>
-              <input type="radio" name="topping" value="mushrooms" checked>mushrooms
+              <input type="checkbox" name="topping" value="mushrooms">Chicken
             </label>
           </div>
-          <div class="radio">
+          <div class="checkbox">
             <label>
-              <input type="radio" name="topping" value="pepperoni">pepperoni
+              <input type="checkbox" name="topping" value="pepperoni">pepperoni
             </label>
           </div>
-          <div class="radio">
+          <div class="checkbox">
             <label>
-              <input type="radio" name="topping" value="jalapeno ">jalapeno
+              <input type="checkbox" name="topping" value="jalapeno ">sausage
             </label>
           </div>
- <button type="submit" class="btn-dark">View Purchase</button> 
-          <div id="output">
-
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="mushrooms">feta
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="pepperoni">Garlic
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="jalapeno ">jalapeno
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="mushrooms">Pineapple
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="pepperoni">tomatoes
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="jalapeno ">olives
+            </label>
+          </div>
+        </div>
       </div>
   
-    </form>
-
+    <button type="submit" class="btn-dark">BUY MY PIE</button> 
+    <div id="output">
+      <img src="img/blank-pizza.png"
+    </div>
+  
+  </form>
   </div>
 </body>
 </html>
