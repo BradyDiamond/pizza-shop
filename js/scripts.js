@@ -1,32 +1,32 @@
 
 
-function Pizza(size, toppings, price) {
+function Pizza(size, toppings,) {
 this.size = size;
 this.toppings = toppings;
-this.price = price
-
+this.getPrice();
 }
+
+
 Pizza.prototype.addTopping = function(topping) {
   this.toppings.push(topping);
 }
-Pizza.prototype.updateCurretPrice = function(price) {
 
+  Pizza.prototype.getPrice = function() {
+    this.price = 0;
 
+    if (this.size === "small") {
+      this.price = 5 ;
+    } else if (this.size === "medium") {
+      this.price = 10;
+    } else { 
+    this.price = 15;
+    }
+    this.price += this.toppings.length * 1.5 ; 
 
-if (this.size === "small") {
-  this.price = 10;
-}
-// console.log(price);
 };
 
 
-
-
-
-
-
 // UI logic
-
 
 $(document).ready(function() {
   $("form#order").submit(function(event) {
@@ -36,12 +36,8 @@ $(document).ready(function() {
     $("input:checkbox[name=topping]:checked").each(function() {
     toppings.push($(this).val());
     });
-    console.log(toppings)
     let myPizza = new Pizza(size, toppings)
-    console.log(myPizza)
     const outputArray = Object.values(myPizza)
     $('#output').text(outputArray)
   });
 });
-
-

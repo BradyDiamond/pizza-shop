@@ -45,3 +45,18 @@ Expected output: Pizza {size: medium, peperoni}
 Test: It will return a Pizza with size and multiple toppings
 code: Pizza.prototype.addTopping("peperoni",  sausage) 
 Expected output: Pizza {size: medium, peperoni, sausage}
+
+Test: It will return a Pizza with size and price attatched to size
+code: Pizza.prototype.getPrice(small) 
+Expected output: Pizza {size: small, price: 5}
+
+
+Test: It will return a Pizza with size and multiple toppings with price adjusted for base size and topping 
+code: Pizza.prototype.addTopping("peperoni",  sausage)
+getPrice(medium)
+Expected output: Pizza {size: medium, peperoni, 8}
+
+Test: It will return a Pizza with size and multiple toppings with price adjusted for base size and multiple toppings 
+code: Pizza.prototype.addTopping("peperoni",  sausage)
+getPrice(medium)
+Expected output: Pizza {size: medium, peperoni, sausage 8}
